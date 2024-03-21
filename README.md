@@ -118,11 +118,11 @@ The app, when run, should look as follows:
 
 ## Authors
 
-- [Nabil Nagib]() 
-- [Mary Njoroge]()
-- [Lameck Kambi]()
-- [Gregory kago]()
-- [Chrispine Ochieng']() 
+- [Nabil Nagib](https://github.com/NabilNagib) 
+- [Mary Njoroge](https://github.com/njoroge-mary)
+- [Lameck Kambi](https://github.com/LameckKambi)
+- [Gregory kago](https://github.com/GregoDs)
+- [Chrispine Ochieng'](https://github.com/Ochiengjr) 
 
 **Additional Notes**
 
