@@ -118,11 +118,11 @@ The app, when run, should look as follows:
 
 ## Authors
 
-- [Nabil Nagib](https://github.com/NabilNagib) 
-- [Mary Njoroge](https://github.com/njoroge-mary)
-- [Lameck Kambi](https://github.com/LameckKambi)
-- [Gregory kago](https://github.com/GregoDs)
-- [Chrispine Ochieng'](https://github.com/Ochiengjr) 
+- [`Nabil Nagib`](https://github.com/NabilNagib) 
+- [`Mary Njoroge`](https://github.com/njoroge-mary)
+- [`Lameck Kambi`](https://github.com/LameckKambi)
+- [`Gregory kago`](https://github.com/GregoDs)
+- [`Chrispine Ochieng`'](https://github.com/Ochiengjr) 
 
 **Additional Notes**
 
@@ -133,7 +133,7 @@ The app, when run, should look as follows:
 
 This project is licensed under the [MIT License](#License).
 ```
-Copyright 2024 Lameck Kambi
+Copyright 2024 Lameck Kambi, Gregory Kago, Chrispine Ochieng'Jr., Mary Njoroge, & Nabil Nagib.
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
@@ -143,9 +143,9 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 ### Acknowledgments
 I would like to express my gratitude to the following individuals and organizations for their contributions, support, and resources that have been invaluable in the development of the project.
 
-- **Technical Mentor:** As a team we would like to acknowledge and appreciate our  technical mentor Mr Ian okumu for his invaluable guidance throughout the project
+- **Technical Mentor:** As a team we would like to acknowledge and appreciate our  technical mentor [`Mr Ian okumu`](https://github.com/otsembo) for his invaluable guidance throughout the project
 
-- **Moringa School:** I appreciate [Moringa school](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiK9-Tw_aKEAxU2QUECHcwOCDoYABAAGgJ3cw&ase=2&gclid=EAIaIQobChMIivfk8P2ihAMVNkFBAh3MDgg6EAAYASAAEgJSB_D_BwE&ohost=www.google.com&cid=CAASJORoHa2LLpPz846DBxVhhEyz_mIvcNnHZ_R4tWoL3IuSCcmYsA&sig=AOD64_04tJFd3Gstl7m-sNfbwiempwyFwg&q&nis=4&adurl&ved=2ahUKEwifmODw_aKEAxUhRKQEHaoDBq0Q0Qx6BAgFEAE) and its staff for guiding me and  providing me with the necessary resources to undertake this project.
+- **Moringa School:** I appreciate [`Moringa school`](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiK9-Tw_aKEAxU2QUECHcwOCDoYABAAGgJ3cw&ase=2&gclid=EAIaIQobChMIivfk8P2ihAMVNkFBAh3MDgg6EAAYASAAEgJSB_D_BwE&ohost=www.google.com&cid=CAASJORoHa2LLpPz846DBxVhhEyz_mIvcNnHZ_R4tWoL3IuSCcmYsA&sig=AOD64_04tJFd3Gstl7m-sNfbwiempwyFwg&q&nis=4&adurl&ved=2ahUKEwifmODw_aKEAxUhRKQEHaoDBq0Q0Qx6BAgFEAE) and its staff for guiding me and  providing me with the necessary resources to undertake this project.
 
 - **React.js:** My development is built on the foundation of [React.js](https://react.dev/), which has been instrumental in creating a robust and scalable application.
 
