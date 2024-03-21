@@ -1,4 +1,5 @@
 import React from "react";
+import './Login.css'
 
 function Login () {
 
@@ -18,12 +19,15 @@ function Login () {
     }
   };
 
-}
+
 
 return (
-  <div>
-
-  </div>
-)
-
+  <div className="log-form">
+  <h3>Login</h3>
+  <input type="text" placeholder="Username" />
+  <input type="password" placeholder="Password" />
+  <button className="submit">Submit</button>
+</div>
+);
+}
 export default Login;
