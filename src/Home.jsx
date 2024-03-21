@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
+import './Home.css'
 
 function Home() {
   const [products, setProducts] = useState([]);
@@ -26,10 +27,15 @@ function Home() {
       {products.map(product => (
         <div key={product.id} className="product-card">
           <img src={product.image} alt={product.title} />
+          <h6>{product.title}</h6>
+            <p className="price">${product.price}</p>
+            <p className="category">{product.category}</p>
         </div>
       ))}
     </div>
   );
 }
+
+
 
 export default Home;

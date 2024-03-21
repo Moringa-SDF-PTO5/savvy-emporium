@@ -1,0 +1,26 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px
+  }
+  
+  .product-card {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: relative;
+    border: 1px solid #d1cfcf;
+    border-radius: 5px;
+    padding: 10px;
+    height: 430px;
+    width: 350px;
+    overflow: hidden;
+  }
+  .product-card img {
+    max-width: 100%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
+  
+  }
