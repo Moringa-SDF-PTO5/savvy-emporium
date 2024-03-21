@@ -4,6 +4,8 @@ import './Home.css'
 
 function Home() {
   const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,6 +23,21 @@ function Home() {
 
     fetchData(); 
   }, []); 
+
+
+  const filterProductsByCategory = category => {																									
+    if (category === 'All') {																									
+    setFilteredProducts(products);																									
+    } else {																									
+    fetch(`https://fakestoreapi.com/products/category/${category.toLowerCase()}`)																									
+    .then(res => res.json())																									
+    .then(data => setFilteredProducts(data))																									
+    .catch(error => console.error(`Error fetching ${category} products:`, error));																									
+    }
+
+    
+
+
 
   return (
     <div className="product-grid">
