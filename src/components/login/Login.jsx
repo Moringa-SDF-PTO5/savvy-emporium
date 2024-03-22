@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Login.css'
-import '../structure/Header.css'
-
+import './Login.css';
+import Register from './Register';
 
 const authenticateUser = async (username, password) => {
   try {
@@ -25,6 +24,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [showRegisterForm, setShowRegisterForm] = useState(false); 
   const navigate = useNavigate();
 
   const handleLogin = async () => {
@@ -50,15 +50,28 @@ const Login = () => {
     }
   };
 
+  const handleRegister = (userData) => {
+    console.log('Registered user:', userData);
+  };
+
+  const handleToggleRegister = () => {
+    setShowRegisterForm(!showRegisterForm); 
+  };
+
   return (
-    <div>
+    <div className='form-container'>
       <h3>Login</h3>
-      <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Username" />
-      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
+      <input className='log-input' type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Username" />
+      <input className='log-pwd' type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
       {error && <p style={{ color: 'red' }}>{error}</p>}
-      <button onClick={handleLogin} disabled={loading}>
+      <button className='btn-login' onClick={handleLogin} disabled={loading}>
         {loading ? 'Logging in...' : 'Login'}
       </button>
+      <div>
+        <p>Do you have an Account?</p>
+        <button className='btn-reg' onClick={handleToggleRegister}>Register</button>
+        {showRegisterForm && <Register onRegister={handleRegister} />} 
+      </div>
     </div>
   );
 };
