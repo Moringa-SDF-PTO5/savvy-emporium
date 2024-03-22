@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Cart({ cart }) { // Pass 'cart' as a prop to the Cart component
+function Cart({ cart }) {
   return (
     <div>
       <h2>Cart</h2>

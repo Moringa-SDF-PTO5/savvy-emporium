@@ -36,7 +36,6 @@ function Home() {
     setCart(prevCart => [...prevCart, product]); 
   };
   
-
   return (
     <div className="home-page">
       <img src={image1} className="main-pic" alt="Main Image" />

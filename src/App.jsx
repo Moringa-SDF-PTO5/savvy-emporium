@@ -12,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home addToCart={setCart} />} />
           <Route path="/cart" element={<Cart cart={cart} />} />
+
         </Routes>
       </Router>
     </div>
