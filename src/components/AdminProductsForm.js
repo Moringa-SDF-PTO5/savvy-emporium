@@ -16,7 +16,8 @@ const AdminProductsForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await axios.post('your_api_endpoint_here', formData);
+    fetch, = await
+     fetch(https://fakestoreapi.com/products, {
     console.log('Form submitted with data:', formData);
 
     setFormData({
@@ -100,4 +101,3 @@ const AdminProductsForm = () => {
 };
 
 export default AdminProductsForm;
-
