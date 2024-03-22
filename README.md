@@ -113,7 +113,7 @@ The app, when run, should look as follows:
 
 - Below is a link to the actual deployed website.
 
-`https://savvy-emporium.vercel.app/`
+    [Link](https://savvy-emporium.vercel.app/)
 
 
 ## Authors
