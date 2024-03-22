@@ -1,0 +1,35 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .error-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .error-page p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .error-page button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .error-page button:hover {
+    background-color: #555;
+  }
