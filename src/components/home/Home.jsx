@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
+import image1 from '../images/savvy_a.png';
 import './Home.css'
 
 function Home() {
@@ -41,7 +42,8 @@ function Home() {
     
     
     return (																									
-    <div className="home-page">																									
+    <div className="home-page">	
+    <img src={image1} className='main-pic' alt='Main Image' />																								
     <h4>Featured Products</h4>																									
     <p>Selected Category: {selectedCategory}</p>																									
     <div className="category-buttons">																									
