@@ -17,7 +17,7 @@ function Home() {
         }
         const data = await response.json();
         setProducts(data);
-        setFilteredProducts(data); // Initialize filtered products with all products
+        setFilteredProducts(data); 
       } catch (error) {
         console.error('Error fetching products:', error);
       }
@@ -47,7 +47,7 @@ function Home() {
       <h4>Featured Products</h4>																									
       <p>Selected Category: {selectedCategory}</p>																									
       <div className="category-buttons">			
-          <Cart cart={cart} />																					
+        <Cart cart={cart} />																					
         <button onClick={() => filterProductsByCategory('All')} className={selectedCategory === 'All' ? 'selected' : ''}>All</button>																									
         <button onClick={() => filterProductsByCategory('Electronics')} className={selectedCategory === 'Electronics' ? 'selected' : ''}>Electronics</button>																									
         <button onClick={() => filterProductsByCategory('Jewelery')} className={selectedCategory === 'Jewelery' ? 'selected' : ''}>Jewelery</button>																									
@@ -66,6 +66,16 @@ function Home() {
         ))}																									
       </div>
       
+      <div className="cart-grid"> {/* Cart Grid */}
+        {cart.map(cartItem => (
+          <div key={cartItem.id} className="cart-item">
+            <img src={cartItem.image} alt={cartItem.title} />
+            <h6>{cartItem.title}</h6>
+            <p className="price">${cartItem.price}</p>
+            <p className="category">{cartItem.category}</p>
+          </div>
+        ))}
+      </div>
     </div>																									
   );																									
 }																									
