@@ -12,7 +12,7 @@ const AdminDashboard = () => {
 
   useEffect(() => {
 
-    fetch('http://localhost:3000/users')
+    fetch('https://emporium-ha7b.onrender.com/users')
       .then(res => res.json())
       .then(users => setUsersCount(users.length))
       .catch(error => console.error('Error fetching users:', error));
@@ -60,6 +60,7 @@ const AdminDashboard = () => {
         <p className='user-count'>Number of Clients: {usersCount}</p>
       </div>
           <Logout />
+
         
     </div>
   );

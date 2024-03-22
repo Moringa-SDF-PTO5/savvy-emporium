@@ -29,7 +29,7 @@ const ForgotPassword = () => {
 
   const handleFetchUsers= async ()  => {
     try {
-      const response = await fetch('http://localhost:3000/users')
+      const response = await fetch('https://emporium-ha7b.onrender.com/users')
       const data = await response.json();
       setUsers(data);
     } catch (error) {
@@ -40,7 +40,7 @@ const ForgotPassword = () => {
     e.preventDefault(); 
     const id = findUserId(email);
     try {
-      const response = await fetch(`http://localhost:3000/users/${id}`, {
+      const response = await fetch(`https://emporium-ha7b.onrender.com/users/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'

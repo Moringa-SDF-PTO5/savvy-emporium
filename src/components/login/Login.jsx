@@ -5,7 +5,7 @@ import Register from './Register';
 
 const authenticateUser = async (username, password) => {
   try {
-    const response = await fetch('http://localhost:3000/users');
+    const response = await fetch('https://emporium-ha7b.onrender.com/users');
     const data = await response.json();  
     const user = data.find(user => user.username === username && user.password === password);
       if (user) {
