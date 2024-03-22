@@ -1,6 +1,11 @@
 import React from 'react';
 
 function Cart({ cart }) {
+  // Check if cart is undefined or null
+  if (!cart) {
+    return <div className="cart">Your cart is empty.</div>;
+  }
+
   return (
     <div className="cart">
       <h4>Shopping Cart</h4>
@@ -16,4 +21,3 @@ function Cart({ cart }) {
 }
 
 export default Cart;
-

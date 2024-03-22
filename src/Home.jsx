@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import './Home.css';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Cart from './components/Cart'; // Import the Cart component
 
 function Home() {
@@ -47,11 +46,8 @@ function Home() {
     <div className="home-page">																									
       <h4>Featured Products</h4>																									
       <p>Selected Category: {selectedCategory}</p>																									
-      <div className="category-buttons">
-        {/* Use Link component to create a button that navigates to the shopping cart page */}
-        <Link to="/cart">
-          <Cart cart={cart} />
-        </Link>																						
+      <div className="category-buttons">			
+          <Cart cart={cart} />																					
         <button onClick={() => filterProductsByCategory('All')} className={selectedCategory === 'All' ? 'selected' : ''}>All</button>																									
         <button onClick={() => filterProductsByCategory('Electronics')} className={selectedCategory === 'Electronics' ? 'selected' : ''}>Electronics</button>																									
         <button onClick={() => filterProductsByCategory('Jewelery')} className={selectedCategory === 'Jewelery' ? 'selected' : ''}>Jewelery</button>																									
