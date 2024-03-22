@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 
 const AdminProductsForm = () => {
   const [formData, setFormData] = useState({
-    productName: '',
-    price: '',
-    description: '',
-    quantity: '',
-    category: '',
-    imageUrl: '',
+    productName: 'test product',
+    price: '13.5',
+    description: 'lorem ipsum set',
+    category: 'electronic',
+    imageUrl: 'https://i.pravatar.cc',
   });
 
   const handleChange = (e) => {
@@ -21,12 +20,11 @@ const AdminProductsForm = () => {
     console.log('Form submitted with data:', formData);
 
     setFormData({
-      productName: '',
-      price: '',
-      description: '',
-      quantity: '',
-      category: '',
-      imageUrl: '',
+      productName: 'test product',
+      price: '13.5',
+      description: 'lorem ipsum set',
+      category: 'electronic',
+      imageUrl: 'https://i.pravatar.cc',
     });
   };
 
