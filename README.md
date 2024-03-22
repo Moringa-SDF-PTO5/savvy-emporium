@@ -63,6 +63,7 @@ you can download [vscode](https://code.visualstudio.com/download) to practice an
      git clone (https://github.com/Moringa-SDF-PTO5/<your-username>/savvy-emporium.git)
      ```
 
+        Then, to open the project code files on VSCode, use the following command:
 
 
 ### Installation
@@ -98,11 +99,10 @@ npm run dev
 
 `i.e`
 ```bash
- http://localhost:5003/
+ http://localhost:3000/
 ```
 
 - You can now successfully view the web application content via the browser.
-Have fun being a Finance Analyst.
 
 
 ## Demo
@@ -154,12 +154,3 @@ I would like to express my gratitude to the following individuals and organizati
 - **Open Source Community:** A big shoutout to the broader open-source community for sharing knowledge, tools, and inspiration. This project stands on the shoulders of the collective expertise and passion that fuels the development community.
 I am grateful for the support and collaborative spirit that makes the development journey enjoyable and fulfilling.
 
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
