@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import './Home.css'
+import './Home.css';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import Cart from './components/Cart'; // Import the Cart component
 
 function Home() {
   const [products, setProducts] = useState([]);
@@ -43,19 +45,13 @@ function Home() {
 
   return (																									
     <div className="home-page">																									
-      <h4>Featured Products</h4>		
-      <div className="cart">
-        <h4>Shopping Cart</h4>
-        <ul>
-          {cart.map(item => (
-            <li key={item.id}>
-              {item.title} - ${item.price}
-            </li>
-          ))}
-        </ul>
-      </div>																								
+      <h4>Featured Products</h4>																									
       <p>Selected Category: {selectedCategory}</p>																									
-      <div className="category-buttons">																									
+      <div className="category-buttons">
+        {/* Use Link component to create a button that navigates to the shopping cart page */}
+        <Link to="/cart">
+          <Cart cart={cart} />
+        </Link>																						
         <button onClick={() => filterProductsByCategory('All')} className={selectedCategory === 'All' ? 'selected' : ''}>All</button>																									
         <button onClick={() => filterProductsByCategory('Electronics')} className={selectedCategory === 'Electronics' ? 'selected' : ''}>Electronics</button>																									
         <button onClick={() => filterProductsByCategory('Jewelery')} className={selectedCategory === 'Jewelery' ? 'selected' : ''}>Jewelery</button>																									
@@ -73,7 +69,7 @@ function Home() {
           </div>																									
         ))}																									
       </div>
-    																								
+      
     </div>																									
   );																									
 }																									
