@@ -46,8 +46,8 @@ This project uses Vite for development and React for the frontend. To get starte
 #### Tools Used
 
 - HTML5
-- CSS3
-- JSX
+- CSS3 / Bootstrap
+- JSX /React
 
 
 ## Setup
@@ -126,7 +126,7 @@ The app, when run, should look as follows:
 
 **Additional Notes**
 
-- Feel free to customize the application to fit your vision of the ultimate bot army!
+- Feel free to customize the application.
 - Explore the codebase and experiment with adding new features or functionalities.
 
 ### License
