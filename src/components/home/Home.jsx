@@ -31,10 +31,11 @@ function Home() {
     setSelectedCategory(category);
   };
 
-  // Function to handle adding product to cart
   const addToCart = product => {
-    setCart(prevCart => [...prevCart, product]); // Adding the product to the cart
+    console.log('Adding to cart:', product);
+    setCart(prevCart => [...prevCart, product]); 
   };
+  
 
   return (
     <div className="home-page">
@@ -79,7 +80,7 @@ function Home() {
             <h6>{product.title}</h6>
             <p className="price">${product.price}</p>
             <p className="category">{product.category}</p>
-            {/* Add to Cart button */}
+           
             <button onClick={() => addToCart(product)}>Add to Cart</button>
           </div>
         ))}
