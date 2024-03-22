@@ -1,0 +1,69 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "role": "admin",
+      "email": "a@g.com",
+      "username": "admin",
+      "password": "admin",
+      "firstName": "John",
+      "lastName": "Lopez",
+      "city": "Eldoret",
+      "street": "New Street",
+      "building": "Cave Apt",
+      "phone": "+25471111111"
+    },
+    {
+      "id": "2",
+      "role": "user",
+      "email": "jolo@gmail.com",
+      "username": "user",
+      "password": "user",
+      "firstName": "Gerald",
+      "lastName": "Steve",
+      "city": "Eldoret",
+      "street": "New Street",
+      "building": "Cave Apt",
+      "phone": "+25471111111"
+    },
+    {
+      "id": "3",
+      "email": "user@use.com",
+      "role": "user",
+      "username": "vint",
+      "password": "1234",
+      "firstName": "Vin",
+      "lastName": "Tan",
+      "city": "Mombasa",
+      "street": "Mwambao",
+      "building": "45",
+      "phone": "090909090909"
+    },
+    {
+      "id": "4",
+      "email": "user@use.com",
+      "role": "user",
+      "username": "user",
+      "password": "",
+      "firstName": "Vin",
+      "lastName": "Tan",
+      "city": "Mombasa",
+      "street": "Mwambao",
+      "building": "45",
+      "phone": "090909090909"
+    },
+    {
+      "id": "5",
+      "email": "man@man.com",
+      "role": "user",
+      "username": "Man",
+      "password": "man",
+      "firstName": "Clarence",
+      "lastName": "Man",
+      "city": "Nairobi",
+      "street": "Bic",
+      "building": "67",
+      "phone": "0789099000"
+    }
+  ]
+}
