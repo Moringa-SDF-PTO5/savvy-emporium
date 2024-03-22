@@ -109,8 +109,28 @@ npm run dev
 
 The app, when run, should look as follows:
 
-![Display](public/bank.png)
+  - Landing page
 
+![Image Sample](src/assets/Landingpage.JPG)
+
+- Products
+
+![Image Sample 2](src/assets/Products.JPG)
+
+  - Landing page
+
+![Image Sample](src/assets/Login.JPG)
+
+- Admin dashboard
+
+![Image Sample 2](src/assets/Dashboard.JPG)
+
+  - User Password Reset
+
+![Image Sample](src/assets/PasswordReset.JPG)
+
+
+## Live Link
 - Below is a link to the actual deployed website.
 
     [Link](https://savvy-emporium.vercel.app/)
