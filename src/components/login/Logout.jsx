@@ -6,7 +6,6 @@ function Logout() {
     const handleLogout = () => {
         localStorage.clear();
         location.href = '/';
-        location.reload();
       };
     return (
         <Link to="#" onClick={handleLogout}>Log out</Link>
