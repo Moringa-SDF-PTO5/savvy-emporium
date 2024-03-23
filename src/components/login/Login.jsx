@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 import Register from './Register';
 
@@ -25,6 +25,7 @@ const Login = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
     const [showRegisterForm, setShowRegisterForm] = useState(false); 
+    const navigate = useNavigate(); 
     const handleLogin = async () => {
     try {
       setLoading(true);
@@ -32,7 +33,7 @@ const Login = () => {
       if (response.success) {
         localStorage.setItem("currentUser", "isLogged")
         if (response.role === 'admin') {
-          location.href='/dashboard'; 
+          navigate='/dashboard'; 
         } else if (response.role === 'user') {
           location.href='/'; 
         }
