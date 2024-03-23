@@ -10,14 +10,14 @@ import ForgotPassword from './components/login/ForgotPassword';
 import ErrorPage from './components/pages/ErrorPage';
 import ChangePassword from './components/login/ChangePassword';
 import UserProfile from './components/dashboard/UserProfile';
+import Category from './components/dashboard/Category';
 import Navbar from './components/structure/Navbar';
 import Footer from './components/structure/Footer';
 import '../src/App.css'
 
 
 function App() {
-  const [selectedCategory, setSelectedCategory] = useState('All');
-
+const [selectedCategory, setSelectedCategory] = useState('All');
   return (
     <div>
     <Router>
