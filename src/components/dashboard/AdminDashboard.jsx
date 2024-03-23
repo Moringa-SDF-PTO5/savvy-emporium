@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './AdminDashboard.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Logout from '../login/Logout';
-import Category from './Category';
 
 const AdminDashboard = () => {
   const [usersCount, setUsersCount] = useState(0);
