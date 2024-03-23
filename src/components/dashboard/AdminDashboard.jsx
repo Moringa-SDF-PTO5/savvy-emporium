@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './AdminDashboard.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Logout from '../login/Logout';
+import Category from './Category';
 
 const AdminDashboard = () => {
   const [usersCount, setUsersCount] = useState(0);
@@ -49,7 +50,7 @@ const AdminDashboard = () => {
     <div className='dashboard-container'>
       <h2 className='dashboard-header'>Admin Dashboard</h2>
       <div className='category-box jewelry'>
-        <h3 className='category-header'>Jewelry</h3>
+        <h3 className='category-header'>Jewelery</h3>
         <p className='category-count'>Number of Products: {categoriesCount['jewelery'] || 0}</p>
       </div>
       <div className='category-box electronics'>
@@ -70,8 +71,11 @@ const AdminDashboard = () => {
         </h3>
         <p className='user-count'>Number of Clients: {usersCount}</p>
       </div>
-      <Logout />
-      {/* Render UserProfile component conditionally */}
+      <div className='category-box products-management'>
+        <h3 className='category-header'>Products Management</h3>
+        <Link to="/products">Edit Products</Link>
+      </div>
+  
       {showUserProfile && <UserProfile />}
     </div>
   );
