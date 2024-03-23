@@ -33,7 +33,7 @@ const Login = () => {
       if (response.success) {
         localStorage.setItem("currentUser", "isLogged")
         if (response.role === 'admin') {
-          navigate=('/dashboard'); 
+          navigate('/dashboard'); 
         } else if (response.role === 'user') {
           location.href='/'; 
         }
