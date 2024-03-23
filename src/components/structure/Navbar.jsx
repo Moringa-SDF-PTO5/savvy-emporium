@@ -28,15 +28,16 @@ return (
 <nav>
 <div className='d-flex flex-row'>
 <img className='p-2' src={logo} alt='logo' />
-<Link to='/'><h4 className='text-info p-2 brand'> Savvy <span id='emporium'>Emporium</span></h4></Link>
+<a href='/'><h4 className='text-info p-2 brand'> Savvy <span id='emporium'>Emporium</span></h4></a>
 </div>
 
 <div className="dropdown">
-<Link className={`text-info ${loggedIn ? 'dropdown-toggle' : "" }`} data-bs-toggle={loggedIn ? "dropdown" : ''} to={loggedIn ? '#' : "/login"}>{loggedIn ? username : 'Login'}</Link>
-{loggedIn ? <ul className="dropdown-menu">
+<Link className='text-info dropdown-toggle'  data-bs-toggle='dropdown' to={loggedIn ? '#' : "/login"}>{loggedIn ? username : 'Login'}</Link>
+<ul className="dropdown-menu">
 <li><Link className='dropdown-item' to="/profile">Profile</Link></li>
-<li className='dropdown-item'><Logout /></li>
-</ul> : null}
+<li><Link className='dropdown-item' to="/dashboard">Admin</Link></li>
+{loggedIn ? <li className='dropdown-item'><Logout /></li> : null}
+</ul>
 </div>
 
 <div className='text-info'><GrCart /></div>

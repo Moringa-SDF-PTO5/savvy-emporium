@@ -8,7 +8,20 @@ import Logout from '../login/Logout';
 const AdminDashboard = () => {
   const [usersCount, setUsersCount] = useState(0);
   const [categoriesCount, setCategoriesCount] = useState({});
-  const navigate = useNavigate(); 
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const userData = localStorage.getItem("userData");
+    if (userData) {const data = JSON.parse(userData);
+      setUser(data)
+      if (data.role !== 'admin') {
+        navigate("/login")
+      }
+    } else {navigate("/login")}
+  
+  }, []);
+
 
   useEffect(() => {
 
