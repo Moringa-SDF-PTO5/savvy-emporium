@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div>
-    <Router>
+    <Router basename='/'>
     <Navbar />
       <Routes>   
         <Route path="/" element={<Home selectedCategory={selectedCategory} />} /> 
