@@ -5,7 +5,7 @@ function Logout() {
     const navigate = useNavigate();
     const handleLogout = () => {
         localStorage.clear();
-        navigate('/');
+        location.href = '/';
         location.reload();
       };
     return (
