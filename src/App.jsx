@@ -31,6 +31,7 @@ const [selectedCategory, setSelectedCategory] = useState('All');
         <Route path='/' element={<PrivateRoute />} >
         <Route path="/dashboard" element={<AdminDashboard />} />
         <Route path="/users" element={<UserProfile />} />
+        <Route path="/products" element={<Category />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/change-password" element={<ChangePassword />} /> 
         </Route >

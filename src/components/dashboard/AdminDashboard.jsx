@@ -75,7 +75,7 @@ const AdminDashboard = () => {
         <h3 className='category-header'>Products Management</h3>
         <Link to="/products">Edit Products</Link>
       </div>
-  
+      <Logout /> 
       {showUserProfile && <UserProfile />}
     </div>
   );
