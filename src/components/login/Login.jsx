@@ -69,9 +69,9 @@ const handleRegister = () => {
           </button>
           <div>
           <Link className='forgot-pwd' to="#" onClick={handleToggleRegister}>Don't have an Account?</Link><br/>
-          {showRegisterForm && <Register onRegister={handleRegister} />}   
         </div>
-      </form> 
+      </form>
+      {showRegisterForm && <Register onRegister={handleRegister} setShowRegisterForm={setShowRegisterForm} />}  
     </div>
   );
 };
