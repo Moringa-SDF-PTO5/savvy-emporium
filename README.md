@@ -2,31 +2,28 @@
 
 Savvy Emporium is a modern e-commerce project built using React and the Fakestore API. It aims to provide users with a seamless online shopping experience
 
-
 ## Table Of Contents
 
 1. [Introduction and Overview](#table-of-contents)
 
 2. [Setup](#setup)
-   - [Installation](#Installation)
+   - [Installation](#installation)
 
 3. [Demo](#demo)
 
 4. [Authors](#authors)
 
-5. [License](#License)
+5. [License](#license)
 
 6. [Acknowledgements](#acknowledgments)
-
 
 # Introduction
 
 This project uses Vite for development and React for the frontend. To get started, you'll need Node.js and npm (or yarn) installed on your system.
 
-
 ### Overview
 
-- The page is built using HTML, CSS, and JavaScript. The following instructions will guide you on how to retrieve the code from GitHub, set it up on VSCode, and run it. 
+- The page is built using HTML, CSS, and JavaScript. The following instructions will guide you on how to retrieve the code from GitHub, set it up on VSCode, and run it.
 
 **File structure**
 
@@ -42,13 +39,11 @@ This project uses Vite for development and React for the frontend. To get starte
 └── main.js
 ```
 
-
 #### Tools Used
 
 - HTML5
 - CSS3 / Bootstrap
 - JSX /React
-
 
 ## Setup
 
@@ -65,24 +60,26 @@ you can download [vscode](https://code.visualstudio.com/download) to practice an
 
         Then, to open the project code files on VSCode, use the following command:
 
-
 ### Installation
 
 1. Since the project is already hosted via vercel, open the link below to open the web application in the browser side.
 
 [`Project`](https://savvy-emporium.vercel.app/)
 
-
 2. You can also run the command below from the terminal side if you want to access the web app from the local host
 
 - First open the cloned repository using VisualStudio Code and open the terminal, or directly open the terminal and write the following commands;
+
   ```bash
   cd 'name of the cloned repository, i.e savvy-emporium'
   ```
+
 - Then to open the project code files on VS code, use the following command;
-  ```bash
-  code .
-  ```
+
+```bash
+code .
+```
+
 - Then install all the node dependencies before running the application using the command;
   
 ```bash
@@ -98,18 +95,18 @@ npm run dev
 3. Open the link provided in the terminal from the web browser to also run the application
 
 `i.e`
+
 ```bash
  http://localhost:3000/
 ```
 
 - You can now successfully view the web application content via the browser.
 
-
 ## Demo
 
 The app, when run, should look as follows:
 
-  - Landing page
+- Landing page
 
 ![Image Sample](src/assets/Landingpage.JPG)
 
@@ -117,7 +114,7 @@ The app, when run, should look as follows:
 
 ![Image Sample 2](src/assets/Products.JPG)
 
-  - Landing page
+- Landing page
 
 ![Image Sample](src/assets/Login.JPG)
 
@@ -125,24 +122,23 @@ The app, when run, should look as follows:
 
 ![Image Sample 2](src/assets/Dashboard.JPG)
 
-  - User Password Reset
+- User Password Reset
 
 ![Image Sample](src/assets/PasswordReset.JPG)
 
-
 ## Live Link
+
 - Below is a link to the actual deployed website.
 
     [Link](https://savvy-emporium.vercel.app/)
 
-
 ## Authors
 
-- [`Nabil Nagib`](https://github.com/NabilNagib) 
+- [`Nabil Nagib`](https://github.com/NabilNagib)
 - [`Mary Njoroge`](https://github.com/njoroge-mary)
 - [`Lameck Kambi`](https://github.com/LameckKambi)
 - [`Gregory kago`](https://github.com/GregoDs)
-- [`Chrispine Ochieng`'](https://github.com/Ochiengjr) 
+- [`Chrispine Ochieng`'](https://github.com/Ochiengjr)
 
 **Additional Notes**
 
@@ -151,7 +147,8 @@ The app, when run, should look as follows:
 
 ### License
 
-This project is licensed under the [MIT License](#License).
+This project is licensed under the [MIT License](#license).
+
 ```
 Copyright 2024 Lameck Kambi, Gregory Kago, Chrispine Ochieng'Jr., Mary Njoroge, & Nabil Nagib.
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -159,8 +156,8 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-
 ### Acknowledgments
+
 I would like to express my gratitude to the following individuals and organizations for their contributions, support, and resources that have been invaluable in the development of the project.
 
 - **Technical Mentor:** As a team we would like to acknowledge and appreciate our  technical mentor [`Mr Ian okumu`](https://github.com/otsembo) for his invaluable guidance throughout the project
@@ -173,4 +170,3 @@ I would like to express my gratitude to the following individuals and organizati
 
 - **Open Source Community:** A big shoutout to the broader open-source community for sharing knowledge, tools, and inspiration. This project stands on the shoulders of the collective expertise and passion that fuels the development community.
 I am grateful for the support and collaborative spirit that makes the development journey enjoyable and fulfilling.
-
