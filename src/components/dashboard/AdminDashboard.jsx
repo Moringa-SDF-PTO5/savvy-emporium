@@ -50,7 +50,7 @@ const AdminDashboard = () => {
       <h2 className='dashboard-header'>Admin Dashboard</h2>
       <div className='category-box jewelry'>
         <h3 className='category-header'>Jewelry</h3>
-        <p className='category-count'>Number of Products: {categoriesCount['jewelry'] || 0}</p>
+        <p className='category-count'>Number of Products: {categoriesCount['jewelery'] || 0}</p>
       </div>
       <div className='category-box electronics'>
         <h3 className='category-header'>Electronics</h3>
