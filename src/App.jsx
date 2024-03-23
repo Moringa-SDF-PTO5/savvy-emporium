@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/home/Home';
@@ -19,31 +18,28 @@ import '../src/App.css'
 
 function App() {
 const [selectedCategory, setSelectedCategory] = useState('All');
-
-return (
-<div>
-<Router>
-<Navbar />
-<Routes>
-<Route path="/" element={<Home selectedCategory={selectedCategory} />} />
-<Route path="/login" element={<Login />} />
-<Route path="/signup" element={<Register />} />
-<Route path="/forgot" element={<ForgotPassword/> }/>
-{/* PrivateRoutes */}
-<Route path='/' element={<PrivateRoute />} >
-<Route path="/dashboard" element={<AdminDashboard />} />
-<Route path="/users" element={<UserProfile />} />
-<Route path="/products" element={<Category />} />
-<Route path="/profile" element={<Profile />} />
-<Route path="/change-password" element={<ChangePassword />} />
-</Route >
-<Route path='*' element={<ErrorPage />} />
-</Routes>
-<Footer />
-</Router>
-</div>
-);
+  return (
+    <div>
+    <Router>
+    <Navbar />
+      <Routes>   
+        <Route path="/" element={<Home selectedCategory={selectedCategory} />} /> 
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Register />} />
+        <Route path="/forgot"  element={<ForgotPassword/> }/>
+        {/* PrivateRoutes */}
+        <Route path='/' element={<PrivateRoute />} >
+        <Route path="/dashboard" element={<AdminDashboard />} />
+        <Route path="/users" element={<UserProfile />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/change-password" element={<ChangePassword />} /> 
+        </Route >
+        <Route path='*' element={<ErrorPage />} />
+      </Routes>
+      <Footer />
+    </Router>
+    </div>
+  );
 }
 
 export default App;
-
