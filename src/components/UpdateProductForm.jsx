@@ -36,7 +36,7 @@ const UpdateProductForm = () => {
       alert('Product updated successfully!');
     } catch (error) {
       if (error.response.status === 401) {
-        logout(); // Logout user if unauthorized
+        logout();
       }
       console.error('Error updating product:', error);
       alert('Failed to update product. Please try again.');
