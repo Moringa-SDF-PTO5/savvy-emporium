@@ -8,7 +8,8 @@ import AdminDashboard from './components/dashboard/AdminDashboard';
 import PrivateRoute from './components/Auth/PrivateRoute';
 import ForgotPassword from './components/login/ForgotPassword';
 import ErrorPage from './components/pages/ErrorPage';
-import ChangePassword from './components/login/ChangePassword'
+import ChangePassword from './components/login/ChangePassword';
+import UserProfile from './components/dashboard/UserProfile';
 import Navbar from './components/structure/Navbar';
 import Footer from './components/structure/Footer';
 import '../src/App.css'
@@ -19,7 +20,7 @@ function App() {
 
   return (
     <div>
-    <Router basename='/'>
+    <Router>
     <Navbar />
       <Routes>   
         <Route path="/" element={<Home selectedCategory={selectedCategory} />} /> 
@@ -29,6 +30,7 @@ function App() {
         {/* PrivateRoutes */}
         <Route path='/' element={<PrivateRoute />} >
         <Route path="/dashboard" element={<AdminDashboard />} />
+        <Route path="/users" element={<UserProfile />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/change-password" element={<ChangePassword />} /> 
         </Route >
