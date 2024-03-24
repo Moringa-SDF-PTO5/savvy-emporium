@@ -1,0 +1,13 @@
+.payment-landing-page {
+    background-image: url('path_to_your_background_image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Adjust text color for better visibility */
+    text-align: center;
+  }
+  
