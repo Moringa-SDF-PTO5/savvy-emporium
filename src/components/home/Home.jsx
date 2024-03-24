@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import image1 from '../images/savvy_a.png';
 import './Home.css';
 
 function Home({ handleAddToCart, cartItems, emptyCart }) {
@@ -45,6 +45,7 @@ function Home({ handleAddToCart, cartItems, emptyCart }) {
 
   return (
     <div className="home-page">
+       <img src={image1} className='main-pic' alt='Main Image' />
       <div className="product-grid">
         {filteredProducts.map(product => (
           <div key={product.id} className="product-card">
