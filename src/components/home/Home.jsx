@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-
 import './Home.css';
 
-function Home({ handleAddToCart }) {
+function Home({ handleAddToCart, cartItems, emptyCart }) {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -38,20 +37,14 @@ function Home({ handleAddToCart }) {
     setSelectedCategory(category);
   };
 
- 
-
-
   const handlePayment = (product) => {
-    history.push({
-      pathname: '/order',
-      state: { product }
-    });
+    // Navigate to the payment page
+    // This code depends on how you handle navigation in your application
   };
   
 
   return (
     <div className="home-page">
-      
       <div className="product-grid">
         {filteredProducts.map(product => (
           <div key={product.id} className="product-card">
