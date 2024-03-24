@@ -60,11 +60,11 @@ function Home({ handleAddToCart, cartItems, emptyCart }) {
         {filteredProducts.map(product => (
           <div key={product.id} className="product-card">
             <img src={product.image} alt={product.title} />
-            <h6>{product.title}</h6>
+            <h6 className='prod-title'>{product.title}</h6>
             <p className="price">${product.price}</p>
             <p className="category">{product.category}</p>
-            <button onClick={() => addToCart(product)} disabled={inCart[product.id]}>Add to Cart</button>
-            <Link to={{ pathname: '/payment', state: { product } }}>Proceed to Payment</Link>
+            <button className='btn btn-primary btn-sm' onClick={() => addToCart(product)} disabled={inCart[product.id]}>Add to Cart</button>
+            <Link className='proceed-payment' to={{ pathname: '/payment', state: { product } }}>Proceed to Payment</Link>
           </div>
         ))}
       </div>

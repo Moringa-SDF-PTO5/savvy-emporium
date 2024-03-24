@@ -82,3 +82,11 @@
 .category-buttons button.selected:hover {
   background-color: #1a48b2;
 }
+
+.proceed-payment {
+  font-size: 12px;
+}
+
+.prod-title {
+  font-size: 16px;
+}
