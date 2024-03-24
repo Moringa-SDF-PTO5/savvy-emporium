@@ -72,7 +72,7 @@ const AdminDashboard = () => {
       </div>
       <div className='category-box products-management'>
         <h3 className='category-header'>Products Management</h3>
-        <Link to="/products">Edit Products</Link>
+        <Link to="/products">Manage Products</Link>
       </div>
       <Logout /> 
       {showUserProfile && <UserProfile />}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import './ChangePassword.css'
 
 
 const ChangePassword = ({id, password}) => {
@@ -35,8 +36,6 @@ const handleFormSubmit = async (e) => {
                 alert('Password changed successfully. Login with your new Password!');
                 navigate("/login")
             }
-            // Optionally handle success scenario
-
           } catch (error) {
            setError('Error resetting password');
           }
@@ -44,8 +43,6 @@ const handleFormSubmit = async (e) => {
         setError('You entered the wrong current Password!')
     }
 }
-
-
 const isPasswordValid = () => {
     if (password) {
        return password === currentPassword ? true : false ;
@@ -57,13 +54,13 @@ const isPasswordValid = () => {
 
     return (
         <div>
-            <form>
+            <form className="change-container">
             {error && <p style={{ color: 'red' }}>{error}</p>} 
-            <label htmlFor="current-password">Current Password:
+            <label className="current-change-password" htmlFor="current-password">Current Password:
             <br/>
             <input type="text" id="current-password" onChange={handleCurrentPassword} value={currentPassword}/>
             </label>
-            <label htmlFor="new-password">New Password:
+            <label className="current-change-password" htmlFor="new-password">New Password:
             <br/><input type="text"  id="new-password" onChange={handleNewPassword} value={newPassword}/>
             </label>
             <button className="btn btn-primary btn-sm " type="button" onClick={handleFormSubmit} >Change Password</button>
