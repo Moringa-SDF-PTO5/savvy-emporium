@@ -37,7 +37,7 @@ function Cart({ cartItems, emptyCart }) {
     <div>
       <h2>Cart</h2>
       
-      <button id='emptyCart' className="btn btn-danger" onClick={handleEmptyCart}>Empty Cart</button>
+     
         <Link to="/payment" className="btn btn-success">Proceed to Payment</Link>
       <Link to="/" className="btn btn-primary">Go Back to Home</Link>
       <div className="total-price">
