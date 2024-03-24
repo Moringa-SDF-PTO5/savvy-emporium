@@ -45,7 +45,17 @@ function Home({ handleAddToCart, cartItems, emptyCart }) {
 
   return (
     <div className="home-page">
-       <img src={image1} className='main-pic' alt='Main Image' />
+      <img src={image1} className='main-pic' alt='Main Image' />
+      <h4>Featured Products</h4>    
+      <h4>Category: {selectedCategory}</h4>
+      <div className="category-buttons">
+        <button onClick={() => filterProductsByCategory('All')} className={selectedCategory === 'All' ? 'selected' : ''}>All</button>
+          <button onClick={() => filterProductsByCategory('Electronics')} className={selectedCategory === 'Electronics' ? 'selected' : ''}>Electronics</button>
+            <button onClick={() => filterProductsByCategory('Jewelery')} className={selectedCategory === 'Jewelery' ? 'selected' : ''}>Jewelery</button>
+          <button onClick={() => filterProductsByCategory("Men's Clothing")} className={selectedCategory === "Men's Clothing" ? 'selected' : ''}>Men's Clothing</button>
+        <button onClick={() => filterProductsByCategory("Women's clothing")} className={selectedCategory === "Women's clothing" ? 'selected' : ''}>Women's Clothing</button>
+      </div>
+
       <div className="product-grid">
         {filteredProducts.map(product => (
           <div key={product.id} className="product-card">
