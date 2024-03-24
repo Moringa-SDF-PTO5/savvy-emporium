@@ -13,17 +13,27 @@ import UserProfile from './components/dashboard/UserProfile';
 import Category from './components/dashboard/Category';
 import Navbar from './components/structure/Navbar';
 import Footer from './components/structure/Footer';
+import Cart from './components/cart/Cart';
+import PaymentLandingPage from './components/payment/PaymentLandingPage';
+import OrderPage from './components/payment/OrderPage';
 import '../src/App.css'
 
 
 function App() {
+  const [cartItems, setCartItems] = useState([]);
+
+  const handleAddToCart = (product) => {
+    
+    setCartItems(prevCartItems => [...prevCartItems, product]);
+  };
+
 const [selectedCategory, setSelectedCategory] = useState('All');
   return (
     <div>
     <Router>
     <Navbar />
       <Routes>   
-        <Route path="/" element={<Home selectedCategory={selectedCategory} />} /> 
+        <Route path="/" element={<Home selectedCategory={selectedCategory} handleAddToCart={handleAddToCart} />} /> 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Register />} />
         <Route path="/forgot"  element={<ForgotPassword/> }/>
@@ -34,6 +44,9 @@ const [selectedCategory, setSelectedCategory] = useState('All');
         <Route path="/products" element={<Category />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/change-password" element={<ChangePassword />} /> 
+        <Route path="/cart" element={<Cart cartItems={cartItems} />} />
+        <Route path="/payment" element={<PaymentLandingPage />} />
+        <Route path="/order" element={<OrderPage />} />
         </Route >
         <Route path='*' element={<ErrorPage />} />
       </Routes>
