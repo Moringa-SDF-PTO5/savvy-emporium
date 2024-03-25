@@ -21,7 +21,7 @@ import '../src/App.css'
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
-
+  const [isValidUser, setIsValidUser] = useState(localStorage.getItem('currentUser') === "isLogged");
   const handleAddToCart = (product) => {
     
     setCartItems(prevCartItems => [...prevCartItems, product]);
@@ -38,7 +38,7 @@ const [selectedCategory, setSelectedCategory] = useState('All');
         <Route path="/signup" element={<Register />} />
         <Route path="/forgot"  element={<ForgotPassword/> }/>
         {/* PrivateRoutes */}
-        <Route path='/' element={<PrivateRoute />} >
+        <Route path='/' element={<PrivateRoute isValidUser={isValidUser}/>} >
         <Route path="/dashboard" element={<AdminDashboard />} />
         <Route path="/users" element={<UserProfile />} />
         <Route path="/products" element={<Category />} />
