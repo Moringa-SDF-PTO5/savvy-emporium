@@ -34,8 +34,10 @@ return (
     <div className="dropdown">
     <Link className='text-info dropdown-toggle'  data-bs-toggle='dropdown' to={loggedIn ? '#' : "/login"}>{loggedIn ? username : 'Login'}</Link>
     <ul className="dropdown-menu">
+    {loggedIn ? null : <Link className='dropdown-item' to="/login">Login</Link> }
+    {loggedIn ? <Link className='dropdown-item' to="/">Home</Link> : null }
     <li><Link className='dropdown-item' to="/profile">Profile</Link></li>
-    <li><Link className='dropdown-item' to="/dashboard">Admin</Link></li>
+    <li><Link className='dropdown-item' to="/dashboard">Dashboard</Link></li>
     {loggedIn ? <li className='dropdown-item'><Logout /></li> : null}
     </ul>
     </div>

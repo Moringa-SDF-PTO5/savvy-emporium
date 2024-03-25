@@ -34,7 +34,7 @@ const handleFormSubmit = async (e) => {
               throw new Error('Failed to reset password');
             } else { 
                 alert('Password changed successfully. Login with your new Password!');
-                navigate("/login")
+                navigate("/")
             }
           } catch (error) {
            setError('Error resetting password');
