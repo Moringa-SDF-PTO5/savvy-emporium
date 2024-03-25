@@ -95,7 +95,7 @@ npm run dev
 
 3. Open the link provided in the terminal from the web browser to also run the application
 
-`i.e`
+
 
 ```bash
  http://localhost:3000/
@@ -132,6 +132,28 @@ The app, when run, should look as follows:
 - Below is a link to the actual deployed website.
 
     [Link](https://savvy-emporium.vercel.app/)
+
+- Credentials & details for admin/user access are as below:
+
+- Admin
+
+            "id": "1",
+            "role": "admin",
+            "email": "a@g.com",
+            "username": "admin",
+            "password": "admin",
+            "firstName": "John",
+
+
+- User
+
+            "id": "2",
+            "role": "user",
+            "email": "jolo@gmail.com",
+            "username": "user",
+            "password": "user",
+            "firstName": "Gerald",
+
 
 ## Authors
 
