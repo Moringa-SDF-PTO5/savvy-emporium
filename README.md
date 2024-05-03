@@ -66,6 +66,10 @@ you can download [vscode](https://code.visualstudio.com/download) to practice an
      ```
 
         Then, to open the project code files on VSCode, use the following command:
+     
+     ```bash
+     code .
+     ```
 
 ### Installation
 
